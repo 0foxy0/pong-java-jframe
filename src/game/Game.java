@@ -47,9 +47,6 @@ public class Game {
 
         for (int i = 0; i < paddles.length; i++) {
             paddles[i].update(this);
-            if (paddles[i].collides(ball)) {
-                ball.bounceOff(paddles[i]);
-            }
         }
     }
 

@@ -19,6 +19,11 @@ public class Paddle {
 
     public void update(Game game) {
         move(velocity, game);
+
+        Ball ball = game.getBall();
+        if (collides(ball)) {
+            ball.bounceOff(this);
+        }
     }
 
     public void move(int velocity, Game game) {

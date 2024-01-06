@@ -15,8 +15,8 @@ public class GamePanel extends JPanel {
 
     public GamePanel(Game game) {
         this.game = game;
-        setBackground(Color.BLACK);
 
+        setBackground(Color.BLACK);
     }
 
     @Override

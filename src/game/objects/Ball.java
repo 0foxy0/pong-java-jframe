@@ -21,9 +21,10 @@ public class Ball {
     }
 
     public void update(Game game) {
-        bounceOffFloorAndCeiling(game);
         x += xVelocity;
         y += yVelocity;
+
+        bounceOffFloorAndCeiling(game);
 
         if (x < 0) {
             game.increaseScore(false);
